@@ -1,3 +1,5 @@
+import { generateOrderNumber } from "./helpers"
+
 export interface initialConfig {
     merchant_code: string
     production?: boolean
@@ -42,7 +44,7 @@ export const initial: initialConfig = {
 export const payment: paymentConfig = {
     currency: 'PEN',
     amount: 0,
-    orderId: '',
+    orderId: generateOrderNumber(),
     customer: {
         email: ''
     },
