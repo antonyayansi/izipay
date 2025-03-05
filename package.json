@@ -1,7 +1,7 @@
 {
   "name": "@dankira/izipay",
   "description": "A simple library for integrating with the IziPay API",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": {
     "name": "Antony Ayansi (https://github.com/antonyayansi)",
     "email": "antonyayansi@proton.me"
