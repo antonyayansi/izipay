@@ -1,0 +1,40 @@
+{
+  "name": "@dankira/izipay",
+  "description": "A simple library for integrating with the IziPay API",
+  "version": "1.0.0",
+  "author": {
+    "name": "Antony Ayansi (https://github.com/antonyayansi)",
+    "email": "antonyayansi@proton.me"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "private": false,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@lyracom/embedded-form-glue": "^1.4.2",
+    "base-64": "^1.0.0",
+    "crypto-js": "^4.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antonyayansi/izipay.git"
+  }
+}
