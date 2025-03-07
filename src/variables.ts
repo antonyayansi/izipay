@@ -35,8 +35,7 @@ export const initial: initialConfig = {
     test_public_key: '',
     prod_sha256: '',
     test_sha256: '',
-    //proxy_url: 'https://app.sistemascusco.com/api/proxy/payment',
-    proxy_url: 'https://konoba.siadeg.pe/api/proxy_izipay',
+    proxy_url: 'http://dankira.laravel.cloud/api/proxy_izipay',
     endpoint: 'https://api.micuentaweb.pe',
     language: 'es-PE'
 }
