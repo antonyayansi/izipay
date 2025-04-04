@@ -35,7 +35,7 @@ export const initial: initialConfig = {
     test_public_key: '',
     prod_sha256: '',
     test_sha256: '',
-    proxy_url: 'http://app.blocmin.com/api/proxy_izipay',
+    proxy_url: 'http://app.blocmin.com/api/proxy/payment',
     endpoint: 'https://api.micuentaweb.pe',
     language: 'es-PE'
 }
