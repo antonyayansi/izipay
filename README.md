@@ -1,5 +1,9 @@
 # Izipay - Pay Form JS
 
+> **⚠️ Importante**
+> 
+> Version estable: 2.0.0 ✅
+
 Fácil de integrar en su proyecto, con configuración mínima y proxy integrado.
 
 ![Descripción de la imagen](src/img/example.png)
