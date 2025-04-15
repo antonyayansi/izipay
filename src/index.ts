@@ -4,6 +4,7 @@ import hmacSHA256 from 'crypto-js/hmac-sha256'
 import Hex from 'crypto-js/enc-hex'
 //@ts-ignore
 import base64 from 'base-64'
+import KRGlue from '@lyracom/embedded-form-glue';
 import { initial, payment, initialConfig, paymentConfig } from './variables';
 
 const addCSS = () => {
@@ -46,8 +47,6 @@ export const setup = async (callback?: (response: any) => void) => {
     });
 
     const response = await data.json();
-
-    const { default: KRGlue } = await import("@lyracom/embedded-form-glue");
 
     KRGlue.loadLibrary(`${initial.endpoint}`, initial.production ? `${initial.prod_public_key}` : `${initial.test_public_key}`)
         .then(({ KR }) => KR.setFormConfig({
